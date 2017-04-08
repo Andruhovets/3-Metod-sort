@@ -2,7 +2,7 @@ using System;
 
 namespace _3rdProject
 {
-    class BubleSortArray                                         //Метод бульбашки
+    class BubleSortArray                                      //BubleSort
     {
         public void BubbleSort()
         {
@@ -13,10 +13,10 @@ namespace _3rdProject
             int[] mas = new int[size];
                 for (i = 0; i < mas.Length; i++)
                 {
-                    mas[i] = r.Next(0, 101);              // масив заповнюється випадковими числами від 0 до 100 
+                    mas[i] = r.Next(0, 101);                  // random number from 1 to 100
                 }
 
-                Console.WriteLine("Невідсортований масив :");   //Виводить невідсортований масив чисел
+                Console.WriteLine("unsorted array :");        //unsorted array
                 for (i = 0; i < mas.Length; i++)
                 {
                     Console.Write(mas[i]+" ");
@@ -36,7 +36,7 @@ namespace _3rdProject
                 }
             }
             Console.WriteLine();
-            Console.WriteLine("Відсортований масив :");     //Виводить відсортований масив чисел
+            Console.WriteLine("sorted array :");               //sorted array
             for (i = 0; i < mas.Length; i++)
             {
                 Console.Write(mas[i] + " ");
@@ -44,7 +44,7 @@ namespace _3rdProject
                   
         }
     }
-class InsertionArray                                          //метод включення
+class InsertionArray                                          //Insertion
 {
       public void InsertionSort()
             {
@@ -54,10 +54,10 @@ class InsertionArray                                          //метод включення
             int[] mas = new int[size];
                 for (i = 0; i < mas.Length; i++)
                 {
-                    mas[i] = r.Next(0, 100);           // масив заповнюється випадковими числами від 0 до 100 
+                    mas[i] = r.Next(0, 100);           // random number from 1 to 100 
                 }
                 Console.WriteLine();
-                Console.WriteLine("Невідсортований масив :"); //Виводить невідсортований масив чисел
+                Console.WriteLine("unsorted array :"); //unsorted array
                 for (i = 0; i < mas.Length; i++)
                 {
                     Console.Write(mas[i]+" ");
@@ -75,7 +75,7 @@ class InsertionArray                                          //метод включення
                     mas[b + 1] = a;
                 }
                 Console.WriteLine();
-                Console.WriteLine("Відсортований масив :");    //Виводить відсортований масив чисел
+                Console.WriteLine("sorted array :");    //sorted array
                 for (i = 0; i < mas.Length; i++)
                 {
                     Console.Write(mas[i] + " ");
@@ -83,7 +83,7 @@ class InsertionArray                                          //метод включення
                   
     }
 }
-class Transposition                                            //метод перестановки
+class Transposition                                            //Transposition 
 {
 
     public void Transpositin()
@@ -95,10 +95,10 @@ class Transposition                                            //метод перестано
         int[] mas = new int[size];
         for (i = 0; i < mas.Length; i++)
         {
-            mas[i] = r.Next(1, 99);                      // масив заповнюється випадковими числами від 0 до 100 
+            mas[i] = r.Next(1, 99);                      // random number from 1 to 100 
         }
         Console.WriteLine();
-        Console.WriteLine("Невідсортований масив :");         //Виводить невідсортований масив чисел
+        Console.WriteLine("unsorted array :");         //unsorted array
         for (i = 0; i < mas.Length; i++)
         {
             Console.Write(mas[i] + " ");
@@ -115,7 +115,7 @@ class Transposition                                            //метод перестано
             mas[j] = cur;
         }
         Console.WriteLine();
-        Console.WriteLine("Відсортований масив :");           //Виводить відсортований масив чисел
+        Console.WriteLine("sorted array :");           //sorted array
         for (i = 0; i < mas.Length; i++)
         {
             Console.Write(mas[i] + " ");
@@ -124,21 +124,21 @@ class Transposition                                            //метод перестано
 }
         class Program
         {
-            static void Main(string[] args)                    //Виведення результатів у вікно консолі
+            static void Main(string[] args)                    //Output results in the console windowВі
             {
-                Console.WriteLine("Сортування методом бульбашки");
+                Console.WriteLine("Sort by BubleSort");
                 BubleSortArray b1 = new BubleSortArray();
                 b1.BubbleSort();
 
                 Console.WriteLine();
-                Console.WriteLine("Сортування методом включення");
+                Console.WriteLine("Sort by Insertion");
                 
                 Console.WriteLine();
                 InsertionArray b2 = new InsertionArray();
                 b2.InsertionSort();
 
                 Console.WriteLine();
-                Console.WriteLine("Сортування методом перестановки");
+                Console.WriteLine("Sort by Transposition");
 
                 Console.WriteLine();
 
